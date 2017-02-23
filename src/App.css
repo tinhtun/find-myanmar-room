@@ -1,3 +1,6 @@
 .App {
   text-align: center;
 }
+.Bg-white {
+  background-color: white !important;
+}
