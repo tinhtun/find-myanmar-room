@@ -12,9 +12,7 @@ const NavigationMenu = () => (
                     </Navbar.Brand>
                 </Navbar.Header>
                 <Nav>
-                    <NavItem eventKey={1} href="http://github.com/tinhtun/find-myanmar-room">Github</NavItem>
-                    <NavItem eventKey={2} href="#">Link</NavItem>
-                    
+                    <NavItem eventKey={1} href="http://github.com/tinhtun/find-myanmar-room"><Glyphicon glyph="folder-open" style={{marginRight: 5}}/>Github</NavItem>
                 </Nav>
             </Navbar>
     )
