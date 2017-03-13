@@ -1,6 +1,10 @@
 .App {
   text-align: center;
 }
-.Bg-white {
+.BgWhite {
   background-color: white !important;
+}
+.PreWrap {
+  white-space: pre-wrap;
+  word-wrap: break-word;
 }
