@@ -1,3 +1,6 @@
+# Find Myanmar Room
+version 0.1
+
 ## ReactJS Boilerplate
 This project was created using create-react-app(https://github.com/facebookincubator/create-react-app) 
 
