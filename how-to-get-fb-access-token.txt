@@ -1,7 +1,0 @@
-https://developers.facebook.com/docs/facebook-login/access-tokens (Generating an App Access Token)
-
-https://graph.facebook.com/v2.8/oauth/access_token?client_id=<app id>&client_secret=<app secret>&grant_type=client_credentials
-{
-"access_token": "<token>",
-"token_type": "bearer"
-}
