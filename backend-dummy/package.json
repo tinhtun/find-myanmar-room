@@ -1,0 +1,14 @@
+{
+  "name": "backend-dummy",
+  "version": "1.0.0",
+  "description": "Backend implementation using json-server for testing purpose only.",
+  "main": "index.js",
+  "author": "Tin Htun",
+  "license": "MIT",
+  "dependencies": {
+    "json-server": "^0.16.1"
+  },
+  "scripts": {
+    "start": "json-server -p 3001 -w db.json"
+  }
+}
