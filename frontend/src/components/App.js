@@ -1,25 +1,30 @@
 import React from "react";
-import Typography from "@material-ui/core/Typography";
-import Container from "@material-ui/core/Container";
-
-import { makeStyles } from "@material-ui/core/styles";
-
-const useStyles = makeStyles({
-  root: {
-    width: "100%",
-    maxWidth: 500,
-  },
-});
+import { Router, Route, Switch } from "react-router-dom";
+import Grid from "@material-ui/core/Grid";
+import Header from "../layouts/Header";
+import history from "../history";
+import PostList from "./PostList";
+import PostCreate from "./PostCreate";
 
 const App = () => {
-  const classes = useStyles();
-
   return (
-    <div className={classes.root}>
-      <Container maxWidth="sm">
-        <Typography variant="h1">App</Typography>
-      </Container>
-    </div>
+    <Router history={history}>
+      <Grid container direction="column">
+        <Grid item xs={12}>
+          <Header />
+        </Grid>
+        <Grid item container>
+          <Grid item xs={false} sm={2} />
+          <Grid item xs={12} sm={8}>
+            <Switch>
+              <Route path="/" exact component={PostList} />
+              <Route path="/post/new" exact component={PostCreate} />
+            </Switch>
+          </Grid>
+          <Grid item xs={false} sm={2} />
+        </Grid>
+      </Grid>
+    </Router>
   );
 };
 
