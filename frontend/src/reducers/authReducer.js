@@ -6,7 +6,7 @@ const INITIAL_STATE = {
 };
 
 export default (state = INITIAL_STATE, action) => {
-  const { tpe, payload } = action;
+  const { type, payload } = action;
   switch (type) {
     case SIGN_IN:
       return { ...state, isSignedIn: true, userId: payload.userId };
